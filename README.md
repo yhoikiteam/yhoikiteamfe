@@ -1,6 +1,6 @@
-# Yhoiki Team
+# Yhoiki Team Project
 
-**Yhoiki Team** adalah aplikasi web yang dirancang untuk menghubungkan freelancer dengan klien, memudahkan kolaborasi proyek, dan memastikan transaksi yang aman. Proyek ini dikembangkan bersama oleh tim dengan fokus pada inovasi, efisiensi, dan pengalaman pengguna.
+**Yhoiki Team Project** adalah aplikasi web yang dirancang untuk menghubungkan freelancer dengan klien, memudahkan kolaborasi proyek, dan memastikan transaksi yang aman. Proyek ini dikembangkan bersama oleh tim dengan fokus pada inovasi, efisiensi, dan pengalaman pengguna.
 
 ## Fitur Utama
 
