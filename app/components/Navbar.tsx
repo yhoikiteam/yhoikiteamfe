@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Button from "./Button";
-import Logo from "../src/Yhoiki.png";
 import { FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
@@ -18,4 +17,4 @@ export default function Navbar() {
             <div id="auth" className="flex space-x-3"><button className="text-gray-400 px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-200 duration-300">Login</button><Button id="register" text="Register" url="/register" customcss="#"/></div>
         </nav>
     )
-}
+};
