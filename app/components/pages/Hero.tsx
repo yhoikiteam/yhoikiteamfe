@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { users } from "./Data/User";
+import { users } from "../../Data/User";
 
 const HeroSection = () => {
   return (
@@ -8,12 +8,12 @@ const HeroSection = () => {
         <div>
           <h1 className="text-4xl font-bold text-[#535753] leading-tight">
             Looking for{" "}
-            <span className="text-green-500 border border-dashed border-[#535753] p-0.5">
+            <span className="text-green-500 border border-dashed border-gray-300 p-0.5">
               Digital
             </span>{" "}
             Needs from <span className="text-green-500">Technology</span> and
             Also{" "}
-            <span className="text-green-500 border border-dashed border-[#535753] p-0.5">
+            <span className="text-green-500 border border-dashed border-gray-300 p-0.5">
               Learning
             </span>{" "}
             Technology.
@@ -41,13 +41,13 @@ const HeroSection = () => {
 
         <div className="relative">
           <Image
-            src="/Herosection/Hero.png"
+            src="/images/Hero.png"
             alt="Hero Image"
             width={600}
             height={400}
             className="rounded-3xl"
           />
-          <div className="absolute text-end top-4 -right-6 bg-[#D9D9D9BF]/50 backdrop-blur-md border border-[#CCCCCC] rounded-3xl shadow-lg shadow-black/50 p-4 w-[270px]">
+          <div className="absolute text-end top-4 -right-6 bg-[#D9D9D9BF]/50 backdrop-blur-md border border-[#CCCCCC] rounded-3xl shadow-xl p-4 w-[270px]">
             <span className="bg-gradient-to-r from-[#75C57E] to-[#34A853] text-white px-10 py-1 rounded-full text-sm font-bold">
               Course
             </span>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <div className="absolute -bottom-6 -left-10 bg-[#D9D9D9BF]/50 backdrop-blur-md border border-[#CCCCCC] rounded-3xl shadow-3XL shadow-black/50 p-4 w-[270px]">
+          <div className="absolute -bottom-6 -left-10 bg-[#D9D9D9BF]/50 backdrop-blur-md border border-[#CCCCCC] rounded-3xl shadow-xl p-4 w-[270px]">
             <span className="bg-gradient-to-r from-[#75C57E] to-[#34A853] text-white px-10 py-1 rounded-full text-sm font-bold">
               Freelance
             </span>
@@ -73,7 +73,7 @@ const HeroSection = () => {
         {users.map((user, index) => (
           <div
             key={index}
-            className="flex items-center bg-[#E6E6E6] border border-[#CCCCCC] p-2 rounded-3xl shadow-lg shadow-black/45 w-60"
+            className="flex items-center bg-[#E6E6E6] border border-[#CCCCCC] p-2 rounded-3xl shadow-xl w-60"
           >
             {/* Gambar Profil */}
             <div className="flex-shrink-0">

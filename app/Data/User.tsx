@@ -8,27 +8,27 @@ export const users: User[] = [
     {
       name: "Kipin Kipon",
       description: "Kula asale saking ngayogyakarta omagaaaaa",
-      imagePath: "/Herosection/Profile.png", 
+      imagePath: "/images/Profile.png", 
     },
     {
       name: "Kipin Kipon",
       description: "Kula asale saking ngayogyakarta omagaaaaa",
-      imagePath: "/Herosection/Profile.png", 
+      imagePath: "/images/Profile.png", 
     },
     {
       name: "Kipin Kipon",
       description: "Kula asale saking ngayogyakarta omagaaaaa",
-      imagePath: "/Herosection/Profile.png", 
+      imagePath: "/images/Profile.png", 
     },
     {
       name: "Kipin Kipon",
       description: "Kula asale saking ngayogyakarta omagaaaaa",
-      imagePath: "/Herosection/Profile.png", 
+      imagePath: "/images/Profile.png", 
     },
     {
       name: "Kipin Kiponr",
       description: "Kula asale saking ngayogyakarta omagaaaaa",
-      imagePath: "/Herosection/Profile.png", 
+      imagePath: "/images/Profile.png", 
     },
   ];
   
