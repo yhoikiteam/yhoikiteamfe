@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { users } from "../../Data/User";
+import Testimony from "../Testimony";
 
 const HeroSection = () => {
   return (
-    <section className="hidden xl:block bg-white py-16 px-6 h-screen">
+    <section className="w-full h-screen bg-white py-16 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
           <h1 className="text-4xl font-bold text-[#535753] leading-tight">
@@ -69,34 +70,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="mt-12 flex gap-5  ">
-        {users.map((user, index) => (
-          <div
-            key={index}
-            className="flex items-center bg-[#E6E6E6] border border-[#CCCCCC] p-2 rounded-3xl shadow-xl w-60"
-          >
-            {/* Gambar Profil */}
-            <div className="flex-shrink-0">
-              <Image
-                src={user.imagePath} 
-                alt="User Avatar"
-                width={62}
-                height={62}
-                className="rounded-full"
-              />
-            </div>
-
-            <div className="ml-4 w-full">
-              <div className=" w-full">
-                {" "}
-                <p className="mt-4 text-white bg-gradient-to-r from-[#75C57E] to-[#34A853] rounded-full inline-flex px-4 items-center justify-center font-medium text-sm">
-                  {user.name}
-                </p>
-                <p className="text-gray-600 text-xs w-full">
-                  {user.description}
-                </p>
-              </div>
-            </div>
+      <div className="w-full flex justify-between py-12">
+        {users.slice(0, 4).map((user, index) => (
+          <div key={index}>
+            <Testimony gambar={user.imagePath} nama={user.name} komennya={user.description}/>
           </div>
         ))}
       </div>
