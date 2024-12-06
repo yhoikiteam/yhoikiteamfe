@@ -1,13 +1,14 @@
 import Navbar from "./components/Navbar";
+import HeroSection from "./components/pages/Hero";
 
 export default function page() {
   return(
     <div className="#">
-      <div className="fixed w-full">
+      <div className="fixed w-full z-50">
         <Navbar/>
       </div>
-      <section>
-        
+      <section className="pt-14">
+        <HeroSection/>
       </section> 
     </div>
   )
