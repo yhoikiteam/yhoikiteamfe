@@ -8,7 +8,7 @@ export default function page() {
       <div className="fixed w-full z-50">
         <Navbar/>
       </div>
-      <section className="pt-14">
+      <section>
         <HeroSection/>
       </section> 
     </div>
