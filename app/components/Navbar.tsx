@@ -27,7 +27,7 @@ export default function Navbar() {
             <div id="auth" className="flex items-center space-x-3">
                 <div id="search" className="bg-gray-200 rounded-full flex items-center text-gray-400 duration-300 hover:border hover:border-gray-300"><FaSearch className="mx-4 max-md:my-3"/><input type="search" name="search" id="search" placeholder="search" className="text-gray-700 bg-transparent rounded-full py-2 focus:outline-none max-md:hidden" /><div className="max-md:hidden"><Button id="search" text="Search" url="/search" customcss="#"/></div></div>
                 <div id="bahasa"><button className="font-semibold mx-5 text-gray-600">ENG</button></div>
-                <button className="text-gray-400 px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-200 duration-300">Login</button><Button id="register" text="Register" url="/register" customcss="#"/>
+                <button className="text-gray-400 px-6 py-2 border border-gray-300 rounded-full hover:bg-gray-200 duration-300">Login</button><Button id="register" text="Register" url="/register" customcss="px-6"/>
             </div>
         </nav>
     )
