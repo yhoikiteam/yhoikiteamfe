@@ -1,6 +1,7 @@
 import CardProduct from "./components/CardProduct";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/pages/Hero";
+import Kategori from "./components/pages/Kategori";
 
 export default function page() {
   return (
@@ -9,11 +10,9 @@ export default function page() {
         <Navbar />
       </div>
       <section>
-        <HeroSection />
-      </section>
-      <section>
-        <CardProduct />
-      </section>
+        <HeroSection/>
+        <Kategori/>
+      </section> 
     </div>
   )
 };
