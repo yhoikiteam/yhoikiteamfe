@@ -1,12 +1,12 @@
 import Image from "next/image"
-import React from "react";
 
 interface Props {
     gambar: string;
     nama: string;
     komennya: string;
 }
-const Testimony: React.FC<Props> = ({ gambar, nama, komennya }) => {
+
+export default function Testimony ({ gambar, nama, komennya } : Props)  {
     return(
         <div className="w-72 h-28 bg-gray-200 rounded-3xl border border-gray-300 shadow-xl flex space-x-4 items-center text-gray-700 p-3">
             <div id="profile">
@@ -29,5 +29,3 @@ const Testimony: React.FC<Props> = ({ gambar, nama, komennya }) => {
         </div>
     )
 };
-
-export default Testimony;

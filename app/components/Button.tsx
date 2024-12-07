@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ButtonProps {
     id: string;
     url: string;
@@ -7,7 +5,7 @@ interface ButtonProps {
     customcss: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ id, url, text, customcss }) => {
+export default function Button ({ id, url, text, customcss } : ButtonProps) {
     return(
         <button id={id} className={`px-4 py-2 bg-gradient-to-r from-color1 to-color2 rounded-full hover:from-color2 hover:to-color2 duration-300 ${customcss}`}>
         <a href={url}>
@@ -16,5 +14,3 @@ const Button: React.FC<ButtonProps> = ({ id, url, text, customcss }) => {
         </button>
     )
 };
-
-export default Button;
