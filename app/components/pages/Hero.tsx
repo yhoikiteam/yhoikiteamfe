@@ -73,7 +73,7 @@ const HeroSection = () => {
       <div className="w-full flex justify-between py-12 px-2">
         {users.slice(0, 4).map((user, index) => (
           <div key={index}>
-            <Testimony gambar={user.imagePath} nama={user.name} komennya={user.description}/>
+            <Testimony gambar={user.imagePath} nama={user.name} komennya={user.description} />
           </div>
         ))}
       </div>
