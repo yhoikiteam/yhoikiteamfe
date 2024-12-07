@@ -4,7 +4,7 @@ import Testimony from "../Testimony";
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-screen bg-white pt-28 px-6">
+    <section className="w-full bg-white pt-28 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
           <h1 className="text-4xl font-bold text-[#535753] leading-tight">
@@ -73,7 +73,7 @@ const HeroSection = () => {
       <div className="w-full flex justify-between py-12">
         {users.slice(0, 4).map((user, index) => (
           <div key={index}>
-            <Testimony gambar={user.imagePath} nama={user.name} komennya={user.description}/>
+            <Testimony gambar={user.imagePath} nama={user.name} komennya={user.description} />
           </div>
         ))}
       </div>
