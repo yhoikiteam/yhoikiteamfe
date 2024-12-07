@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/pages/Hero";
+import Kategori from "./components/pages/Kategori";
 
 export default function page() {
   return(
@@ -9,6 +10,7 @@ export default function page() {
       </div>
       <section>
         <HeroSection/>
+        <Kategori/>
       </section> 
     </div>
   )

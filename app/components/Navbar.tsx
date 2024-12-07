@@ -20,7 +20,7 @@ export default function Navbar() {
         {label: "Programs"},
     ]
     return(
-        <nav className="w-full flex items-center justify-between px-8 py-4 border-b shadow-xl backdrop-blur-md">
+        <nav className="w-full flex items-center justify-between px-8 py-4 border-b shadow-xl bg-white">
             <a href="/" id="logo" className="flex space-x-3 items-center"><img className="w-7" src="https://i.ibb.co.com/0DhSzYN/Yhoiki.png" alt="logo" /><h1 className="text-gray-700 font-bold text-xl">Yhoiki</h1></a>
             <div id="sub" className="list-none text-gray-600 flex space-x-10">
                 {sub.map((item, index) => (
