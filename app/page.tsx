@@ -12,7 +12,7 @@ export default function page() {
       <section>
         <HeroSection/>
         <Kategori/>
-      </section> 
+      </section>
     </div>
   )
 };
