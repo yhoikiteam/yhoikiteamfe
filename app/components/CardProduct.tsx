@@ -2,6 +2,7 @@ import Image from "next/image";
 import { products } from "../Data/Product";
 import { FaStar } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
+import { FaCrown } from "react-icons/fa6";
 
 export default function CardProduct() {
     return (
@@ -36,7 +37,7 @@ export default function CardProduct() {
                             <span className="flex text-xs text-white bg-gradient-to-r from-color1 to-color2 px-4 md:px-2 rounded-full gap-1 py-[0.2rem] items-center">
                                 <p className="text-xs">Top Rate</p>
                                 {[...Array(2)].map((index) => (
-                                    <FaStar key={index} className="text-white" />
+                                    <FaCrown key={index} className="text-white" />
                                 ))}
                             </span>
                         </div>
