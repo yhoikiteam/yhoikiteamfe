@@ -12,7 +12,8 @@ export default function page() {
       <section>
         <HeroSection/>
         <Kategori/>
-      </section>
+      </section> 
+>>>>>>>>> Temporary merge branch 2
     </div>
   )
 };
