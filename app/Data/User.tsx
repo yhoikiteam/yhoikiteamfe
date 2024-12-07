@@ -6,7 +6,7 @@ interface User {
 
 export const users: User[] = [
     {
-      name: "Kipin Kipon",
+      name: "Resta",
       description: "Kula asale saking ngayogyakarta omagaaaaa",
       imagePath: "/images/Profile.png", 
     },
