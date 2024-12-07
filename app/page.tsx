@@ -1,15 +1,19 @@
+import CardProduct from "./components/CardProduct";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/pages/Hero";
 
 export default function page() {
-  return(
+  return (
     <div className="#">
       <div className="fixed w-full z-50">
-        <Navbar/>
+        <Navbar />
       </div>
       <section>
-        <HeroSection/>
-      </section> 
+        <HeroSection />
+      </section>
+      <section>
+        <CardProduct />
+      </section>
     </div>
   )
 };
