@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/pages/Hero";
-import Testimony from "./components/Testimony";
 
 export default function page() {
   return(
