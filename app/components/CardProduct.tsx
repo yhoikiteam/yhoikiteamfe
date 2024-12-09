@@ -12,9 +12,18 @@ interface CardProps {
   description: string;
 }
 
-export default function CardProduct({ id, imageSrc, badgeSrc, name, price, rating, reviews, description }: CardProps) {
+export default function CardProduct({
+  id,
+  imageSrc,
+  badgeSrc,
+  name,
+  price,
+  rating,
+  reviews,
+  description,
+}: CardProps) {
   return (
-    <div className="inline-block min-w-[300px] max-w-sm gap-5 rounded-2xl overflow-hidden border-2 border-gray-200">
+    <div className="inline-block min-w-[300px] max-w-sm rounded-2xl overflow-hidden border-2 border-gray-200 mx-4">
       {/* Hero Image */}
       <div className="relative h-44 flex justify-center items-center">
         <Image
@@ -28,14 +37,16 @@ export default function CardProduct({ id, imageSrc, badgeSrc, name, price, ratin
       {/* Card Content */}
       <div className="p-4">
         <div className="flex items-center justify-between mb-2">
-          <Image
-            src={imageSrc}
-            alt="Badge"
-            width={32}
-            height={32}
-            className="rounded-full"
-          />
-          <span className="font-medium text-sm text-gray-800">{name}</span>
+          <div className="flex items-center gap-4">
+            <Image
+              src={imageSrc}
+              alt="Badge"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+            <span className=" text-sm text-gray-800 font-semibold">{name}</span>
+          </div>
 
           {/* Rating */}
           <span className="flex text-xs text-white bg-gradient-to-r from-color1 to-color2 px-4 md:px-2 rounded-full gap-1 py-[0.2rem] items-center">
@@ -53,9 +64,12 @@ export default function CardProduct({ id, imageSrc, badgeSrc, name, price, ratin
         </div>
 
         {/* Description */}
-        <p className="text-gray-500 text-sm pb-20">
-          {description}
-        </p>
+        <div className="relative w-full md:w-[200px]">
+          {" "}
+          <p className="text-gray-500 text-sm pb-20 max-h-[3rem] leading-5 overflow-hidden text-ellipsis whitespace-normal">
+            {description}
+          </p>
+        </div>
 
         {/* Rating and reviews */}
         <div className="flex items-center mt-2 text-gray-500">
@@ -72,7 +86,7 @@ export default function CardProduct({ id, imageSrc, badgeSrc, name, price, ratin
         </div>
 
         {/* Add to keranjang */}
-        <div className="mt-4 flex justify-between items-center">
+        <div className="mt-4 flex gap-4 justify-between items-center">
           <Button
             id={`product-${price}-price`}
             url="#"

@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 interface ButtonProps {
   id: string;
@@ -9,11 +11,11 @@ interface ButtonProps {
 
 interface ButtonFilterProps {
   id: string;
-  url: string;
+  onClick: (id: string) => void;
   text: string;
   customcss?: string;
   icons?: React.ReactNode;
-  isActive?: boolean; // Properti untuk menandai apakah button aktif
+  isActive?: boolean;
 }
 
 export default function Button({ id, url, text, customcss }: ButtonProps) {
@@ -31,24 +33,25 @@ export default function Button({ id, url, text, customcss }: ButtonProps) {
 
 export const ButtonFilter: React.FC<ButtonFilterProps> = ({
   id,
-  url,
   text,
-  customcss,
   icons,
-  isActive = false, // Default nilai false
+  customcss,
+  onClick,
+  isActive,
 }) => {
   return (
     <button
+      onClick={() => onClick(id)} 
       id={id}
       className={`w-full h-12 text-left p-[2px] mb-2 rounded-full font-semibold ${
         isActive ? " bg-gradient-to-r from-[#75C57E] to-[#34A853]" : ""
       } ${customcss}`}
     >
       <div className="bg-[#E6E6E6] w-full h-full items-center px-3 text-start flex text-[#535753] rounded-full">
-        <a href={url} className="flex items-center gap-3">
+        <div className="flex items-center gap-3">
           <div>{icons}</div>
           <p>{text}</p>
-        </a>
+        </div>
       </div>
     </button>
   );
