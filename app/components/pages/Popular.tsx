@@ -1,6 +1,7 @@
 import { ButtonFilter } from "../Button";
 import CardProduct from "../CardProduct";
 import Search from "../Search";
+import { products } from "@/app/Data/Product";
 import { buttonData } from "@/app/Data/FilterProduct";
 
 export default function Product() {
@@ -37,9 +38,19 @@ export default function Product() {
         {/* Products */}
         <div className="md:col-span-9 col-span-full">
           <div className="overflow-x-auto whitespace-nowrap">
-            <div className="flex gap-4">
-              <CardProduct />
-            </div>
+          {products.map((product) => (
+          <CardProduct
+            key={product.id} 
+            id={product.id}
+            imageSrc={product.imageSrc}
+            badgeSrc={product.badgeSrc}
+            name={product.name}
+            price={product.price}
+            rating={product.rating}
+            reviews={product.reviews}
+            description={product.description}
+          />
+        ))}
           </div>
         </div>
       </div>
