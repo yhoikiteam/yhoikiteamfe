@@ -26,7 +26,7 @@ export default function Product() {
                 Newest
               </span>
               {" "}
-              Product
+              Class
             </h2>
             <p className="text-[#535753] font-semibold">
               Look for the products you need here and see competitive prices
