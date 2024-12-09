@@ -1,16 +1,55 @@
+import React from "react";
+
 interface ButtonProps {
-    id: string;
-    url: string;
-    text: string;
-    customcss: string;
+  id: string;
+  url: string;
+  text: string;
+  customcss: string;
 }
 
-export default function Button ({ id, url, text, customcss } : ButtonProps) {
-    return(
-        <button id={id} className={`px-4 py-2 bg-gradient-to-r from-color1 to-color2 rounded-full hover:from-color2 hover:to-color2 duration-300 ${customcss}`}>
-        <a href={url}>
-            <h1 className="text-white">{text}</h1>
+interface ButtonFilterProps {
+  id: string;
+  url: string;
+  text: string;
+  customcss?: string;
+  icons?: React.ReactNode;
+  isActive?: boolean; // Properti untuk menandai apakah button aktif
+}
+
+export default function Button({ id, url, text, customcss }: ButtonProps) {
+  return (
+    <button
+      id={id}
+      className={`px-4 py-2 bg-gradient-to-r from-color1 to-color2 rounded-full hover:from-color2 hover:to-color2 duration-300 ${customcss}`}
+    >
+      <a href={url}>
+        <h1 className="text-white">{text}</h1>
+      </a>
+    </button>
+  );
+}
+
+export const ButtonFilter: React.FC<ButtonFilterProps> = ({
+  id,
+  url,
+  text,
+  customcss,
+  icons,
+  isActive = false, // Default nilai false
+}) => {
+  return (
+    <button
+      id={id}
+      className={`w-full h-12 text-left p-[2px] mb-2 rounded-full font-semibold ${
+        isActive ? " bg-gradient-to-r from-[#75C57E] to-[#34A853]" : ""
+      } ${customcss}`}
+    >
+      <div className="bg-[#E6E6E6] w-full h-full items-center px-3 text-start flex text-[#535753] rounded-full">
+        <a href={url} className="flex items-center gap-3">
+          <div>{icons}</div>
+          <p>{text}</p>
         </a>
-        </button>
-    )
+      </div>
+    </button>
+  );
 };
