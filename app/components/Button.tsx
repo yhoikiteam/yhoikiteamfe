@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface ButtonProps {
@@ -24,9 +25,9 @@ export default function Button({ id, url, text, customcss }: ButtonProps) {
       id={id}
       className={`px-4 py-2 bg-gradient-to-r from-color1 to-color2 rounded-full hover:from-color2 hover:to-color2 duration-300 ${customcss}`}
     >
-      <a href={url}>
+      <Link href={url}>
         <h1 className="text-white">{text}</h1>
-      </a>
+      </Link>
     </button>
   );
 }
