@@ -37,7 +37,7 @@ export default function Product() {
         {/* Products */}
         <div className="md:col-span-9 col-span-full">
           <div className="overflow-x-auto whitespace-nowrap">
-            <div className="flex gap-4">
+            <div>
               <CardProduct />
             </div>
           </div>

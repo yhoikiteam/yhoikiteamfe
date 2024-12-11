@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface ButtonProps {
   id: string;
@@ -22,9 +23,9 @@ export default function Button({ id, url, text, customcss }: ButtonProps) {
       id={id}
       className={`px-4 py-2 bg-gradient-to-r from-color1 to-color2 rounded-full hover:from-color2 hover:to-color2 duration-300 ${customcss}`}
     >
-      <a href={url}>
+      <Link href={url}>
         <h1 className="text-white">{text}</h1>
-      </a>
+      </Link>
     </button>
   );
 }
@@ -45,10 +46,10 @@ export const ButtonFilter: React.FC<ButtonFilterProps> = ({
       } ${customcss}`}
     >
       <div className="bg-[#E6E6E6] w-full h-full items-center px-3 text-start flex text-[#535753] rounded-full">
-        <a href={url} className="flex items-center gap-3">
+        <Link href={url} className="flex items-center gap-3">
           <div>{icons}</div>
           <p>{text}</p>
-        </a>
+        </Link>
       </div>
     </button>
   );
