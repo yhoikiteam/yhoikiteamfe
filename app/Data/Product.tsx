@@ -5,8 +5,8 @@ interface Product {
     rating: number;
     reviews: number;
     price: number;
-    badge: string;
-    image: string;
+    badgeSrc: string;
+    imageSrc: string;
 }
 
 export const products: Product[] = [
@@ -17,8 +17,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 2,
@@ -27,8 +27,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 3,
@@ -37,8 +37,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 4,
@@ -47,8 +47,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 5,
@@ -57,8 +57,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 6,
@@ -67,8 +67,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 7,
@@ -77,8 +77,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 8,
@@ -87,8 +87,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 9,
@@ -97,8 +97,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 10,
@@ -107,8 +107,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 11,
@@ -117,8 +117,8 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
     {
         id: 12,
@@ -127,7 +127,7 @@ export const products: Product[] = [
         rating: 4.9,
         reviews: 1995,
         price: 25,
-        badge: "/images/badge.png",
-        image: "/images/Profile.png",
+        badgeSrc: "/images/badge.png",
+        imageSrc: "/images/Profile.png",
     },
 ]

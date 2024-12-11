@@ -24,13 +24,7 @@ export default function Product() {
         {/* Sidebar Filter */}
         <div className="md:col-span-3 p-4 ">
           {buttonData.map((button) => (
-            <ButtonFilter
-              key={button.id}
-              id={button.id}
-              url={button.url}
-              text={button.text}
-              icons={button.icon}
-            />
+            <div></div>
           ))}
         </div>
 
@@ -38,7 +32,6 @@ export default function Product() {
         <div className="md:col-span-9 col-span-full">
           <div className="overflow-x-auto whitespace-nowrap">
             <div>
-              <CardProduct />
             </div>
           </div>
         </div>

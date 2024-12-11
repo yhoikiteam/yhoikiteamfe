@@ -19,11 +19,20 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 
-.no-scrollbar::-webkit-scrollbar {
+.scroll-container::-webkit-scrollbar {
   display: none;
 }
+
+
+.scroll-container {
+  scrollbar-width: none;  
+}
+
+/* Tambahkan kelas CSS untuk mencegah drag */
+.no-drag {
+  -webkit-user-drag: none; /* untuk browser berbasis Webkit seperti Chrome, Safari */
+  user-select: none; /* mencegah teks atau gambar diseleksi atau diseret */
+}
+
+
