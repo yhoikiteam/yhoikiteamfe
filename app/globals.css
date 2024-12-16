@@ -29,10 +29,3 @@ body {
   scrollbar-width: none;  
 }
 
-/* Tambahkan kelas CSS untuk mencegah drag */
-.no-drag {
-  -webkit-user-drag: none; /* untuk browser berbasis Webkit seperti Chrome, Safari */
-  user-select: none; /* mencegah teks atau gambar diseleksi atau diseret */
-}
-
-
